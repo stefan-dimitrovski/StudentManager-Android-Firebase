@@ -13,7 +13,7 @@ class StudentsViewModel : ViewModel() {
 
     private val mAuth = FirebaseAuth.getInstance()
     private val database =
-        FirebaseDatabase.getInstance("https://lab4-b3852-default-rtdb.europe-west1.firebasedatabase.app/")
+        FirebaseDatabase.getInstance("firebasedatabase-url")
     private val studentsRef = database.getReference("students")
 
     fun getStudentsLiveData(): MutableLiveData<List<Student>> {
